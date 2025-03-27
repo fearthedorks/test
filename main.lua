@@ -39,7 +39,7 @@ ScreenGui.ResetOnSpawn = false
 ScreenGui.Enabled = false
  
 local BackFrame = Instance.new("Frame")
-BackFrame.Size = UDim2.new(1.3, 0, 0.9, 0.3)
+BackFrame.Size = UDim2.new(1.3, 0, 2.9, 0.3)
 BackFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 BackFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 BackFrame.SizeConstraint = Enum.SizeConstraint.RelativeYY
@@ -74,7 +74,7 @@ Loading.Position = UDim2.fromScale(0.5, 0.2)
 Corner:Clone().Parent = Loading
  
 local Frame = Instance.new("ScrollingFrame")
-Frame.Size = UDim2.new(1.3, 0, 0.9, 1)
+Frame.Size = UDim2.new(0.8, 3, 1.2, 1)
 Frame.CanvasSize = UDim2.new(0, 0, 0, 0)
 Frame.AutomaticCanvasSize = Enum.AutomaticSize.Y
 Frame.ScrollingDirection = Enum.ScrollingDirection.Y
@@ -223,7 +223,7 @@ SearchBar.Parent = BackFrame
  
 -- Add new text label for "made by za1k"
 local MadeByLabel = Instance.new("TextLabel")
-MadeByLabel.Text = "Updated By gab.                  Version: 2.0.1,1" 
+MadeByLabel.Text = "Updated By gab.                  Version: 2.0.11" 
 MadeByLabel.TextScaled = true
 MadeByLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 MadeByLabel.BackgroundTransparency = 0.3
