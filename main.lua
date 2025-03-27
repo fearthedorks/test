@@ -1,4 +1,4 @@
-
+-- Made by za1k
 local IsStudio = false
 
 local ContextActionService = game:GetService("ContextActionService")
@@ -223,7 +223,7 @@ SearchBar.Parent = BackFrame
  
 -- Add new text label for "made by za1k"
 local MadeByLabel = Instance.new("TextLabel")
-MadeByLabel.Text = "Updated By gab.                  Version: 2.0.1.1"
+MadeByLabel.Text = "Updated By gab.                  Version: 2.0.1,1" 
 MadeByLabel.TextScaled = true
 MadeByLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 MadeByLabel.BackgroundTransparency = 0.3
@@ -622,7 +622,7 @@ local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ki
 local Notify = AkaliNotif.Notify;
 
 Notify({
-Description = "Made By Gab";
+Description = "Made By Gabmipapi";
 Title = "Sweat.wtf";
 Duration = 5;
 });
