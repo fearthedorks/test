@@ -39,9 +39,10 @@ ScreenGui.ResetOnSpawn = false
 ScreenGui.Enabled = false
  
 local BackFrame = Instance.new("Frame")
-BackFrame.Size = UDim2.new(1, 0, 0.5, 0) 
+BackFrame.Size = UDim2.new(1, 0, 1, 0)
+
 BackFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-BackFrame.Position = UDim2.new(0, 0, 0, 0)  -- Positioned at the top of the screen
+BackFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 BackFrame.SizeConstraint = Enum.SizeConstraint.RelativeYY
 BackFrame.BackgroundTransparency = 1
 BackFrame.BorderSizePixel = 0
@@ -74,7 +75,7 @@ Loading.Position = UDim2.fromScale(0.5, 0.2)
 Corner:Clone().Parent = Loading
  
 local Frame = Instance.new("ScrollingFrame")
-Frame.Size = UDim2.new(1, 0, 1, 0) 
+Frame.Size = UDim2.new(0.8, 3, 1.2, 1)
 Frame.CanvasSize = UDim2.new(0, 0, 0, 0)
 Frame.AutomaticCanvasSize = Enum.AutomaticSize.Y
 Frame.ScrollingDirection = Enum.ScrollingDirection.Y
