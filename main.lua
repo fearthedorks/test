@@ -220,33 +220,20 @@ SearchBar:GetPropertyChangedSignal("Text"):Connect(function()
 end)
 Corner:Clone().Parent = SearchBar
 SearchBar.Parent = BackFrame
- local MadeByLabel = Instance.new("TextLabel")
-MadeByLabel.Text = "Updated By gab.               lorex x yummy"
+
+
+local MadeByLabel = Instance.new("TextLabel")
+MadeByLabel.Text = "Updated By gab.                  Lorex X Yummy"
 MadeByLabel.TextScaled = true
 MadeByLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 MadeByLabel.BackgroundTransparency = 0.3
 MadeByLabel.TextColor3 = Color3.new(1, 1, 1)
-MadeByLabel.BorderSizePixel = 0  -- Disable default border
+MadeByLabel.BorderSizePixel = 0
 MadeByLabel.AnchorPoint = Vector2.new(0.5, 0.5)
 MadeByLabel.Position = UDim2.new(1, 0, 1, 0)
 MadeByLabel.Size = UDim2.new(0.25, 0, 0.06, 0)
+Corner:Clone().Parent = MadeByLabel
 MadeByLabel.Parent = BackFrame
-
--- Add UIStroke for a custom border
-local stroke = Instance.new("UIStroke")
-stroke.Thickness = 3 -- Adjust border thickness
-stroke.Parent = MadeByLabel
-
--- Function to cycle through RGB colors
-task.spawn(function()
-    while true do
-        for i = 0, 255, 5 do
-            stroke.Color = Color3.fromRGB(i, 255 - i, math.random(100, 255))
-            task.wait(0.05) -- Adjust speed
-        end
-    end
-end)
- 
 local function openemotes(name, state, input)
 	if state == Enum.UserInputState.Begin then
 		ScreenGui.Enabled = not ScreenGui.Enabled
