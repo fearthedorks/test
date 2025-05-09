@@ -223,7 +223,7 @@ SearchBar.Parent = BackFrame
 
 
 local MadeByLabel = Instance.new("TextLabel")
-MadeByLabel.Text = "Updated By gab.                  Lorex X Yummy"
+MadeByLabel.Text = "Updated By gab.                  GAB ON FKING TOP"
 MadeByLabel.TextScaled = true
 MadeByLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 MadeByLabel.BackgroundTransparency = 0.3
